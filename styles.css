@@ -1,0 +1,149 @@
+body {
+    font-family: "Jetbrains Mono";
+    src: url("/fonts/JetBrainsMono-Regular.ttf");
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: black;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+body p,
+ul,
+li {
+    color: #455A64;
+}
+
+h1 {
+    font-size: 3.5em;
+    margin-top: 55px;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #263238;
+}
+
+.main {
+    background-color: antiquewhite;
+    padding: 50px 50px;
+}
+
+.main i {
+    color: #64B5F6;
+}
+
+.title {
+    position: relative;
+}
+
+.title::after {
+    background-color: #64B5F6;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    bottom: -10px;
+    left: 0;
+    position: absolute;
+    width: 100px;
+}
+
+.content {
+    margin-top: 110px;
+    position: relative;
+}
+
+.content h2 {
+    position: relative;
+}
+
+.content h2::after {
+    background-color: #64B5F6;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    bottom: -10px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.quote,
+.table {
+    margin-top: 3em;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.desc {
+    margin-left: 3em;
+}
+
+.slider {
+    background-color: #64B5F6;
+    min-width: 385px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    position: relative;
+}
+
+.slider h2 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #455A64;
+    color: #64B5F6;
+}
+
+.slider p {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+img {
+    border-radius: 50%;
+    height: 220px;
+    width: 220px;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.contact {
+    width: 100%;
+}
+
+.interests {
+    position: absolute;
+    bottom: 1em;
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .interests {
+        position: relative;
+    }
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 20px;
+    color: #455A64;
+    width: 100%;
+    font-size: 50px;
+}
