@@ -77,6 +77,10 @@ h2 {
     width: 100%;
 }
 
+.city {
+    margin-left: 20%;
+}
+
 .quote,
 .table {
     margin-top: 3em;
